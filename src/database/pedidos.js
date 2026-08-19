@@ -21,8 +21,26 @@ function buscarPedidosPorUsuario(userId) {
   return db.prepare('SELECT * FROM pedidos WHERE userId = ? ORDER BY id DESC').all(userId);
 }
 
+function buscarPedidoAtivoPorUsuario(userId) {
+  return db.prepare(`
+    SELECT *
+    FROM pedidos
+    WHERE userId = ?
+      AND status IN ('Aberto', 'Em produção', 'Aguardando pagamento')
+    ORDER BY id DESC
+    LIMIT 1
+  `).get(userId);
+}
+
 function atualizarStatus(id, status) {
   db.prepare('UPDATE pedidos SET status = ? WHERE id = ?').run(status, id);
 }
 
-module.exports = { criarPedido, atualizarCanalPedido, buscarPedidoPorId, buscarPedidosPorUsuario, atualizarStatus };
+module.exports = {
+  criarPedido,
+  atualizarCanalPedido,
+  buscarPedidoPorId,
+  buscarPedidosPorUsuario,
+  buscarPedidoAtivoPorUsuario,
+  atualizarStatus
+};

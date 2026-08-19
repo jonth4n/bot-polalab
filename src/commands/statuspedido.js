@@ -30,13 +30,25 @@ module.exports = {
     }
 
     atualizarStatus(id, status);
-    await interaction.reply({ content: `✅ Status do pedido #${id} atualizado para **${status}**.` });
 
-    if (pedido.canalId) {
-      const canal = await interaction.guild.channels.fetch(pedido.canalId).catch(() => null);
-      if (canal) {
-        await canal.send(`📌 Status do pedido atualizado para: **${status}**`);
-      }
+await interaction.reply({
+  content: `✅ Status do pedido #${id} atualizado para **${status}**.`
+});
+
+if (pedido.canalId) {
+  const canal = await interaction.guild.channels
+    .fetch(pedido.canalId)
+    .catch(() => null);
+
+  if (canal) {
+    await canal.send(`📌 Status do pedido atualizado para: **${status}**`);
+
+    if (status === 'Concluído' || status === 'Cancelado') {
+      setTimeout(async () => {
+        await canal.delete().catch(() => {});
+      }, 3000);
     }
   }
+}
+}
 };
