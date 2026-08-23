@@ -5,7 +5,7 @@ const { buildCategoriasOverviewEmbed } = require('../utils/embeds');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('servicos')
-    .setDescription('Veja os serviços oferecidos pelo PolaLab'),
+    .setDescription('Veja os serviços oferecidos pela PolaLab'),
 
   async execute(interaction) {
     const servicesConfig = carregarServices();

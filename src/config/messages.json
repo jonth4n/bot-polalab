@@ -11,6 +11,6 @@
     "cancelado": "❌ Orçamento cancelado."
   },
   "atendimento": {
-    "template": "📣 {usuario} pediu atendimento! {staff}, alguém pode ajudar por aqui?"
+    "template": "📣 {usuario} pediu atendimento! {staff}, aguarde um segundo, equipe o Polar ta vindo:)"
   }
 }

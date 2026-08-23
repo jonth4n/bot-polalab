@@ -11,11 +11,11 @@
           "descricao": "Logotipo original para sua marca, com até 2 rodadas de revisão.",
           "prazoEstimado": "5 a 7 dias úteis",
           "pacotes": [
-            { "id": "basico", "nome": "Básico", "preco": 120, "descricao": "1 conceito de logo + arquivo final" },
-            { "id": "completo", "nome": "Completo", "preco": 280, "descricao": "3 conceitos + manual de marca simplificado" }
+            { "id": "basico", "nome": "Básico", "preco": 40, "descricao": "1 conceito de logo + arquivo final" },
+            { "id": "completo", "nome": "Completo", "preco": 100, "descricao": "3 conceitos + manual de marca simplificado" }
           ],
           "extras": [
-            { "id": "revisao_extra", "nome": "Revisão extra", "preco": 30 },
+            { "id": "revisao_extra", "nome": "Revisão extra", "preco": 20 },
             { "id": "entrega_expressa", "nome": "Entrega expressa (-2 dias)", "preco": 50 }
           ]
         },
@@ -25,44 +25,11 @@
           "descricao": "Pacote de artes para feed e stories.",
           "prazoEstimado": "4 a 6 dias úteis",
           "pacotes": [
-            { "id": "basico", "nome": "Básico", "preco": 120, "descricao": "5 artes para feed" },
-            { "id": "completo", "nome": "Completo", "preco": 220, "descricao": "10 artes para feed + 5 stories" }
+            { "id": "basico", "nome": "Básico", "preco": 110, "descricao": "5 artes para feed" },
+            { "id": "completo", "nome": "Completo", "preco": 250, "descricao": "10 artes para feed + 5 stories" }
           ],
           "extras": [
-            { "id": "template_editavel", "nome": "Template editável (Canva)", "preco": 40 }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "motion",
-      "nome": "Motion/Edição",
-      "descricao": "Vídeos, animações e edição de conteúdo.",
-      "servicos": [
-        {
-          "id": "video_promocional",
-          "nome": "Vídeo Promocional",
-          "descricao": "Vídeo curto de divulgação com motion graphics.",
-          "prazoEstimado": "7 a 10 dias úteis",
-          "pacotes": [
-            { "id": "basico", "nome": "Básico", "preco": 300, "descricao": "Até 30 segundos" },
-            { "id": "completo", "nome": "Completo", "preco": 550, "descricao": "Até 60 segundos + trilha sonora" }
-          ],
-          "extras": [
-            { "id": "legendas", "nome": "Legendas", "preco": 40 }
-          ]
-        },
-        {
-          "id": "edicao_reels",
-          "nome": "Edição de Reels",
-          "descricao": "Edição dinâmica para redes sociais.",
-          "prazoEstimado": "2 a 4 dias úteis",
-          "pacotes": [
-            { "id": "basico", "nome": "Básico", "preco": 80, "descricao": "1 vídeo editado" },
-            { "id": "pacote5", "nome": "Pacote de 5", "preco": 350, "descricao": "5 vídeos editados" }
-          ],
-          "extras": [
-            { "id": "animacoes", "nome": "Animações extras", "preco": 50 }
+            { "id": "template_editavel", "nome": "Template editável (Canva)", "preco": 50 }
           ]
         }
       ]
@@ -78,12 +45,12 @@
           "descricao": "Página única para divulgar produto ou serviço.",
           "prazoEstimado": "7 a 12 dias úteis",
           "pacotes": [
-            { "id": "basico", "nome": "Básico", "preco": 300, "descricao": "1 página, layout responsivo" },
-            { "id": "completo", "nome": "Completo", "preco": 500, "descricao": "1 página + formulário de contato integrado" }
+            { "id": "basico", "nome": "Básico", "preco": 150, "descricao": "1 página, layout responsivo" },
+            { "id": "completo", "nome": "Completo", "preco": 400, "descricao": "1 página + formulário de contato integrado" }
           ],
           "extras": [
             { "id": "animacoes", "nome": "Animações", "preco": 50 },
-            { "id": "dominio_setup", "nome": "Configuração de domínio", "preco": 40 }
+            { "id": "dominio_setup", "nome": "Configuração de domínio", "preco": 50 }
           ]
         },
         {
@@ -92,8 +59,8 @@
           "descricao": "Protótipo de interface para aplicativo.",
           "prazoEstimado": "10 a 15 dias úteis",
           "pacotes": [
-            { "id": "basico", "nome": "Básico", "preco": 400, "descricao": "Até 5 telas" },
-            { "id": "completo", "nome": "Completo", "preco": 750, "descricao": "Até 10 telas + protótipo interativo" }
+            { "id": "basico", "nome": "Básico", "preco": 100, "descricao": "Até 5 telas" },
+            { "id": "completo", "nome": "Completo", "preco": 450, "descricao": "Até 10 telas + protótipo interativo" }
           ],
           "extras": [
             { "id": "design_system", "nome": "Design system básico", "preco": 100 }

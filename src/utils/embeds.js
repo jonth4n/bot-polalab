@@ -7,8 +7,8 @@ function precoInicialServico(servico) {
 
 function buildCategoriasOverviewEmbed(config) {
   const embed = new EmbedBuilder()
-    .setTitle('📋 Serviços do PolaLab')
-    .setDescription('Escolha uma categoria no menu abaixo para ver os serviços disponíveis.')
+    .setTitle('📋 Serviços na PolaLab')
+    .setDescription('Escolha uma categoria no menu abaixo para ver os serviços disponíveis. Após cofirmar o orçamento, você deve responder o formulario:)')
     .setColor(0x8A63D2);
 
   for (const categoria of config.categorias) {
@@ -37,7 +37,7 @@ function buildCategoriaDetailEmbed(categoria) {
 
 function buildResumoEmbed(categoria, servico, pacote, extras, total) {
   const embed = new EmbedBuilder()
-    .setTitle('🧾 Resumo do Orçamento')
+    .setTitle('🧾 Resumo do pedido')
     .setColor(0x8A63D2)
     .addFields(
       { name: 'Categoria', value: categoria.nome, inline: true },
@@ -60,8 +60,8 @@ function buildResumoEmbed(categoria, servico, pacote, extras, total) {
 
 function buildPagamentoOverviewEmbed(paymentsConfig) {
   const embed = new EmbedBuilder()
-    .setTitle('💳 Formas de pagamento')
-    .setDescription('Escolha uma forma de pagamento no menu abaixo para ver as instruções.')
+    .setTitle('💳 Formas de pagamento disponiveis')
+    .setDescription('Escolha uma forma de pagamento no menu abaixo para podermos saber como te guiar no processo.')
     .setColor(0x8A63D2);
 
   for (const metodo of paymentsConfig.metodos) {
@@ -81,7 +81,7 @@ function buildPagamentoInstrucoesEmbed(metodo) {
 function buildFaqOverviewEmbed(faqConfig) {
   const embed = new EmbedBuilder()
     .setTitle('❓ Perguntas frequentes')
-    .setDescription('Escolha uma pergunta no menu abaixo para ver a resposta.')
+    .setDescription('Escolha uma pergunta no menu abaixo para receber suporte rapidamente.')
     .setColor(0x8A63D2);
 
   for (const pergunta of faqConfig.perguntas) {

@@ -5,7 +5,7 @@ const { buildFaqReply } = require('../utils/faqUI');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('faq')
-    .setDescription('Perguntas frequentes sobre o PolaLab'),
+    .setDescription('Perguntas frequentes sobre os serviços'),
 
   async execute(interaction) {
     const faqConfig = carregarFaq();
