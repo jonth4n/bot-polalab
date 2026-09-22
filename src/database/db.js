@@ -19,5 +19,13 @@ db.exec(`
     criadoEm TEXT NOT NULL DEFAULT (datetime('now'))
   )
 `);
+db.exec(`
+  CREATE TABLE IF NOT EXISTS projetos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    titulo TEXT NOT NULL,
+    descricao TEXT NOT NULL,
+    imagemUrl TEXT NOT NULL
+  )
+`);
 
 module.exports = db;

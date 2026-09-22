@@ -22,7 +22,7 @@ module.exports = {
 
     const id = interaction.options.getInteger('id');
     const status = interaction.options.getString('status');
-
+    
     const pedido = buscarPedidoPorId(id);
     if (!pedido) {
       await interaction.reply({ content: `Pedido #${id} não encontrado.`, ephemeral: true });

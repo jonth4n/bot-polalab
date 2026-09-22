@@ -118,6 +118,7 @@ function buildPedidosEmbed(pedidos) {
   return embed;
 }
 
+
 module.exports = {
   precoInicialServico,
   buildCategoriasOverviewEmbed,
